@@ -1,0 +1,24 @@
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  &.inverted {
+    background-color: transparent;
+    &.primary {
+      border: 1px solid #0070c9;
+      color: #0070c9;
+    }
+    &.danger {
+      border: 1px solid #ee0000;
+      color: #ee0000;
+    }
+  }
+  &.primary:not(.inverted) {
+    background-color: #0070c9;
+    color: #ffffff;
+  }
+  &.danger:not(.inverted) {
+    background-color: #ee0000;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,9 @@
+.user-detail {
+  &__role-container {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-top: 5px;
+    }
+  }
+}
