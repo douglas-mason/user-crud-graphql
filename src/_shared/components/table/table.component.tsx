@@ -68,7 +68,7 @@ export const Table: React.FC<TableProps> = ({
                 </td>
               );
             } else {
-              return <td key={key}>{row[key as keyof User]}</td>;
+              return <td key={key}>{row[key as keyof User].replace('_', ' ').toLowerCase()}</td>;
             }
           })}
         </tr>

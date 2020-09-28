@@ -47,7 +47,7 @@ export const Dashboard = () => {
 
   return (
     <section className="dashboard">
-      <div>
+      <div className="dashboard__header">
         <h1>Users</h1>
         <Button
           type="danger"

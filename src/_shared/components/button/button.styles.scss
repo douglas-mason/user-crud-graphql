@@ -1,15 +1,21 @@
 .button {
   background-color: transparent;
   border: none;
+  max-height: 30px;
   padding: 5px 10px;
   cursor: pointer;
   &.inverted {
     background-color: transparent;
-    &.primary {
+    &:disabled {
+      border: 1px solid #b8b8b8;
+      color: #b8b8b8;
+      cursor: not-allowed;
+    }
+    &.primary:not(:disabled) {
       border: 1px solid #0070c9;
       color: #0070c9;
     }
-    &.danger {
+    &.danger:not(:disabled) {
       border: 1px solid #ee0000;
       color: #ee0000;
     }
