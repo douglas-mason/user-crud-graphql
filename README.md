@@ -1,3 +1,5 @@
+> View the deployed site [here](https://nifty-sinoussi-be9d03.netlify.app/)
+
 # React Table CRUD evaluation
 
 - Fork this repository and build your solution in the fork. When you're done reach out to us with the link to your solution repository.
@@ -11,7 +13,7 @@
 ```js
 export default {
   GRAPHQL_ENDPOINT: '',
-  GRAPHQL_API_KEY: ''
+  GRAPHQL_API_KEY: '',
 };
 ```
 
