@@ -41,14 +41,15 @@ export const UserDetail = () => {
   };
 
   return (
-    <section>
-      <div>
+    <section className="user-detail">
+      <div className="user-detail__header">
         <h1>{params.user.email}</h1>
         <Button onClick={onSaveClick} type="primary" text="Save"></Button>
       </div>
-      <form>
-        <div>
-          <label>
+      <form className="user-detail__form">
+        <div className="user-detail__fields">
+          <label className="user-detail__input">
+            <span>Name</span>
             <input defaultValue={name} onChange={(e) => setName(e.currentTarget.value)} />
           </label>
         </div>

@@ -1,7 +1,38 @@
 .user-detail {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  // align-items: center;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #b8b8b8;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+  &__fields {
+    flex-grow: 1;
+  }
+  &__input {
+    span {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
   &__role-container {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
+    border-left: 0.5px solid #b8b8b8;
+    padding-left: 20px;
     label {
       margin-top: 5px;
     }
